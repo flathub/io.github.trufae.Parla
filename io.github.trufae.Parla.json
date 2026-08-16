@@ -33,8 +33,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chatmail/core.git",
-                    "tag": "v2.53.0",
-                    "commit": "d844f29c68f682043f9fd25cb3b7dc3037786360"
+                    "tag": "v2.59.0",
+                    "commit": "e322fdf157d8573db6e57aeefb7d3cdb1b272b19"
                 },
                 "cargo-sources-deltachat.json"
             ]
