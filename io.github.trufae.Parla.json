@@ -49,8 +49,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/trufae/parla.git",
-                    "tag": "0.8.8",
-                    "commit": "9714704fd10e110e9ed4351b95e2d93f197b0ef3",
+                    "tag": "0.9.0",
+                    "commit": "94b58438e9c5fe93545272bb8a32c460b44f8d58",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/trufae/parla/releases/latest",
