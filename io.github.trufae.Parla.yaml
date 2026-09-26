@@ -25,8 +25,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/chatmail/core.git
-        tag: v2.60.0
-        commit: a2d8ced169bb4f9f3b7629b1fa5100c9315ab3a8
+        tag: v2.62.0
+        commit: 49f6296bdcc02b23799d191bf85e775295ddd86a
       - cargo-sources-deltachat.json
   - name: parla
     buildsystem: meson
@@ -35,8 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/trufae/parla.git
-        tag: 0.9.2
-        commit: 85468eab0714cfd838e7bde34af9b8fbee0cc171
+        tag: 0.9.4
+        commit: 12d90f00398310d3abf7fd5454182b74479a42f3
         x-checker-data:
           type: json
           url: https://api.github.com/repos/trufae/parla/releases/latest
