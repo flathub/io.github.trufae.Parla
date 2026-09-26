@@ -2,7 +2,7 @@ REPO_DIR = $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 DOCKER_CMD := docker
 DELTACHAT_URL := https://github.com/chatmail/core.git
-DELTACHAT_COMMIT := $(shell jq -r '.modules[] | select(.name == "deltachat-rpc-server") | .sources[0].commit' io.github.trufae.Parla.json)
+DELTACHAT_COMMIT := $(shell yq -r '.modules[] | select(.name == "deltachat-rpc-server") | .sources[0].commit' io.github.trufae.Parla.yaml)
 BUILDER_TOOLS_URL := https://github.com/flatpak/flatpak-builder-tools.git
 BUILDER_TOOLS_COMMIT := 737c0085912f9f7dabf9341d4608e2a77a51a73a
 
@@ -17,7 +17,7 @@ install:
 		--mirror-screenshots-url=https://dl.flathub.org/media/ \
 		--repo=repo \
 		builddir \
-		io.github.trufae.Parla.json
+		io.github.trufae.Parla.yaml
 
 regenerate-sources:
 	@if [ -z "$(DELTACHAT_COMMIT)" ]; then echo "Missing DELTACHAT_COMMIT"; exit 1; fi
