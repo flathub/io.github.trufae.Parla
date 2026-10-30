@@ -26,8 +26,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/chatmail/core.git
-        tag: v2.62.0
-        commit: 49f6296bdcc02b23799d191bf85e775295ddd86a
+        tag: v2.66.0
+        commit: 874fd127419365f52ffe116b22703ec29e6854d4
       - cargo-sources-deltachat.json
   - name: parla
     buildsystem: meson
