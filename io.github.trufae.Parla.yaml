@@ -29,6 +29,26 @@ modules:
         tag: v2.66.0
         commit: 874fd127419365f52ffe116b22703ec29e6854d4
       - cargo-sources-deltachat.json
+  - name: libzip
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_DOC=OFF
+      - -DBUILD_EXAMPLES=OFF
+      - -DBUILD_REGRESS=OFF
+      - -DBUILD_TOOLS=OFF
+    cleanup:
+      - /bin
+      - /include
+      - /lib/cmake
+      - /lib/pkgconfig
+    sources:
+      - type: archive
+        url: https://libzip.org/download/libzip-1.12.1.tar.xz
+        sha256: c40062022a1963c80573d48f6070792297cecd7c6bffe3aefcac0d8b9bee8913
+        x-checker-data:
+          type: anitya
+          project-id: 10649
+          url-template: https://libzip.org/download/libzip-$version.tar.xz
   - name: parla
     buildsystem: meson
     config-opts:
@@ -36,8 +56,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/trufae/parla.git
-        tag: 0.10.0
-        commit: 2d58e0d2b1ba0241dcc420408614f7964b87f50e
+        tag: 0.10.6
+        commit: 0594ac69a165ac420d4c131b2bb414270af22002
         x-checker-data:
           type: json
           url: https://api.github.com/repos/trufae/parla/releases/latest
