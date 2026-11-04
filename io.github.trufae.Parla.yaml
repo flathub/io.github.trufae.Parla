@@ -26,8 +26,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/chatmail/core.git
-        tag: v2.66.0
-        commit: 874fd127419365f52ffe116b22703ec29e6854d4
+        tag: v2.67.0
+        commit: 7808d335a558569658f703b13520b1e51a565c21
       - cargo-sources-deltachat.json
   - name: libzip
     buildsystem: cmake-ninja
