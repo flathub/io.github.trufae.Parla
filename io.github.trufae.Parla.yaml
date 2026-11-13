@@ -29,6 +29,21 @@ modules:
         tag: v2.69.0
         commit: 2f4f0c221fc0c5a6095093808be8ea7c9ed1a86b
       - cargo-sources-deltachat.json
+  - name: webp-pixbuf-loader
+    buildsystem: meson
+    post-install:
+      - gdk-pixbuf-query-loaders /app/lib/gdk-pixbuf-2.0/2.10.0/loaders/*.so > /app/lib/gdk-pixbuf-2.0/2.10.0/loaders/loaders.cache
+    sources:
+      - type: git
+        url: https://github.com/aruiz/webp-pixbuf-loader
+        tag: 0.2.7
+        commit: 52232e4ba282b2fed68e8fcb4b5d45ed0eaa4ed3
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/aruiz/webp-pixbuf-loader/releases/latest
+          timestamp-query: .published_at
+          version-query: .tag_name
+          tag-query: .tag_name
   - name: parla
     buildsystem: meson
     config-opts:
