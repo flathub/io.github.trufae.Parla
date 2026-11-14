@@ -32,7 +32,7 @@ modules:
   - name: parla
     buildsystem: meson
     config-opts:
-      - -Dwebxdc=true
+      - -Dupdate_checks=false
     sources:
       - type: git
         url: https://github.com/trufae/parla.git
