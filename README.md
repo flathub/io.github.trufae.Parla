@@ -16,4 +16,5 @@ cat << EOF | sudo tee /usr/local/bin/parla-cli
 #!/bin/sh
 exec flatpak run --command=parla-cli io.github.trufae.Parla "\$@"
 EOF
+sudo chmod a+rx /usr/local/bin/parla-cli
 ```
