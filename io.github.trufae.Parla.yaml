@@ -36,8 +36,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/trufae/parla.git
-        tag: 0.10.8
-        commit: bfb183c86ddc6d50f9aedce64f08b0fb30df5fc4
+        tag: 0.10.10
+        commit: a103c85d3c57b8ddf2b76d913ede9d9eb3d55373
         x-checker-data:
           type: json
           url: https://api.github.com/repos/trufae/parla/releases/latest
